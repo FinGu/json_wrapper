@@ -17,7 +17,7 @@ namespace jw {
             serializer = new DataContractJsonSerializer(object_type);
 
             if (!is_serializable(object_type))
-                throw new Exception($"the object {current_object} isn't a serializable");
+                throw new Exception($"the object {current_object} isn't serializable");
         }
 
         public string to_json_string() {
